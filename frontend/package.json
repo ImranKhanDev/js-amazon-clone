@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server src --verbose",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server src --verbose"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "live-server": "^1.2.2"
   }
 }
