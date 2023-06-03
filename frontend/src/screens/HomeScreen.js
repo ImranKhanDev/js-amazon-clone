@@ -5,16 +5,21 @@ const HomeScreen = {
   render: async () => {
     // const { products } = data; from frontend
     const response= await fetch("http://localhost:5000/api/products",{
+     
       header : {
         "Content-Type":'application/json',
 
       }
-    });
+      
+    }
+    
+    );
     if(!response||!response.ok){
       return ` <div>
       Error in getting data</div>`;
     }
     const products = await response.json();
+    console.log(products);
     return `
     <ul class="products">
       ${products

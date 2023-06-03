@@ -1,9 +1,9 @@
-// const express = require('express')
-import express from "express"
-// const data = require('./data.js')
-import data from "./data.js"
-import cors from"cors"
-// const cors = require('cors')
+const express = require('express')
+// import express from "express"
+const data = require('./data.js')
+// import data from "./data.js"
+// import cors from"cors"
+const cors = require('cors')
 const app = express()
 app.use(cors());
 app.get('/api/products',(req,res)=>{
